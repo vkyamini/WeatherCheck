@@ -28,6 +28,7 @@ body {
    flex-wrap: wrap;
    justify-content: center;
    margin-top: 20px;
+  
     
 }#submit_btn{
     margin-left:5px;
@@ -36,6 +37,9 @@ body {
     border-radius: 12px;
     width: 80px;
     border: 1px solid black;
+    background-color: black;
+    color:white;
+  
 }
 #currentLocation{
     margin-left:5px;
@@ -44,11 +48,31 @@ body {
     border-radius: 12px;
     width: 200px;
     border: 1px solid black;
+    background-color: black;
+    color:white;
 }
 #input_box{
     text-align: center;
-    width: 200px;
+    width: 220px;
     height:30px;
     border-radius: 12px;
     border: 1px solid black;
 }
+
+#submit_btn:hover,
+#currentLocation:hover{
+    background-color:darkgray;   /* Blue background on hover */
+    color: black;                /* White text */
+    transform: scale(1.05);      /* Slight zoom */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+   
+}#input_box:focus {
+    outline: none; /* Removes the default blue outline */
+    border: 2px solid darkgrey; /* Blue border */
+    box-shadow: 0 0 8px rgba(43, 45, 48, 0.5); /* Glowing effect */
+    background-color: #f8f9fb; /* Light background for focus */
+    transition: all 0.3s ease;
+  }
