@@ -183,7 +183,7 @@ let gradient = "";
 if (tempdata <= 0) {
     desc = "Freezing 🧊";
     recommendations = "🚫 Do not go out — it's freezing cold. Stay warm indoors!";
-} else if (tempdata <= 10) {
+} else if (tempdata <= 11) {
     desc = "Cold 🥶";
     recommendations = "🧥 Dress warmly with layers. A hot drink might help!";
   } else if (tempdata <= 18) {
@@ -261,7 +261,7 @@ function getAirQualityStatus(value, pollutant) {
     airAdvice = "Air quality is good. Enjoy the fresh air!";
     } else if (pm25 <= 35) {
     airEmoji = "⚠️";
-    airAdvice = "Moderate air quality. Sensitive groups should limit long exposure.";
+    airAdvice = "Moderate air quality.If you are Sensitive, it is recommended to limit long exposure.";
     } else if (pm25 <= 55) {
     airEmoji = "😷";
     airAdvice = "Unhealthy for sensitive groups. Limit outdoor activities.";
@@ -424,11 +424,11 @@ wind.innerHTML = `
 wind.innerHTML += `
   <div style="margin-top: 1rem;">
     <p style="color: #fff;">
-      📝 Recommendations:
+    <strong> 📝 Recommendations:</strong> 
     </p>
-    <ul style="padding-left: 20px;">
-      ${windRecommendations.map(r => `<li>${r}</li>`).join("")}
-    </ul>
+    <ul style="padding-left: 20px; list-style: none;">
+        ${windRecommendations.map(r => `<li style="margin-bottom: 6px;">${r}</li>`).join("")}
+   </ul>
   </div>
 `;
 
