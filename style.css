@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+   
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    transition: background 0.5s ease;
+    text-align: center;
+    font-family: 'Manrope', 'Poppins', sans-serif;;
+}.airQuality{
+   border: 1px solid black;
+   border-radius: 12px;
+   padding: 20px;
+  
+}.wind,
+.astrodiv{
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 10px;
+}
+  
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+.weather_dispay{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 20px;
+    
+}#submit_btn{
+    margin-left:5px;
+    margin-right:10px;
+    height:32px;
+    border-radius: 12px;
+    width: 80px;
+    border: 1px solid black;
+}
+#currentLocation{
+    margin-left:5px;
+    margin-right:10px;
+    height:32px;
+    border-radius: 12px;
+    width: 200px;
+    border: 1px solid black;
+}
+#input_box{
+    text-align: center;
+    width: 200px;
+    height:30px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
