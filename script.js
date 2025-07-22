@@ -110,7 +110,7 @@ submitBtn.addEventListener('click',function(){
     output_box.innerHTML = "";
     query = inputBox.value.trim();
     console.log("inside button",query)
-    fetch(`http://api.weatherstack.com/current?access_key=${apik}&query=${query}`)
+    fetch(`https://api.weatherstack.com/current?access_key=${apik}&query=${query}`)
     .then(function (response) {
     return response.json();
   })
