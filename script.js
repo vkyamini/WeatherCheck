@@ -412,7 +412,7 @@ if (!isDay) {
 
 wind.innerHTML = ` 
   <p style="font-size: 1.2rem; font-weight: 600; color: #fff; background: rgba(0, 0, 0, 0.2); padding: 8px 12px; border-radius: 8px; margin-bottom: 10px; letter-spacing: 0.5px; text-shadow: 0 1px 2px rgba(0,0,0,0.3);"><strong>🍃 Wind Overview</strong> 🍃</p>
-  <p><strong>Wind Speed:</strong> ${Obj.wind_speed}</p>
+  <p><strong>Wind Speed:</strong> ${Obj.wind_speed}km</p>
   <p><strong>Wind Direction:</strong> ${Obj.wind_dir}</p>
   <p><strong>Pressure:</strong> ${pressureStatus} (${pressure} hPa)</p>
   <p><strong>${precipEmoji} — ${precip} mm</strong></p>
