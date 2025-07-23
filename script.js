@@ -236,7 +236,8 @@ else cloudEmoji = "☁️ Overcast";
 
 
 // Update text
-temp.innerHTML = `<strong>Present temperature is:</strong> ${tempdata}°C , it's ${desc} <br> feels like: ${Obj.feelslike}°C <br><br>
+temp.innerHTML = `<strong>Weather Discription:</strong>${Obj.weather_descriptions}<br>
+<strong>Present temperature is:</strong> ${tempdata}°C , it's ${desc} <br> feels like: ${Obj.feelslike}°C <br><br>
 <strong>${cloudEmoji} (${cloudCover}%)</strong><br><br>
 <strong style="color: #fff;">Recommendation:</strong> ${recommendations}`;
 // <--------------------------------temp-----------------------------------> 
@@ -379,7 +380,7 @@ if (humidity <= 40) {
 }
 //wind speed
 if (Obj.wind_speed > 20) {
-    recommendations.push("🌬️ It's windy — avoid biking or outdoor sports.");
+  windRecommendations.push("🌬️ It's windy — avoid biking or outdoor sports.");
      }
     else{
         windRecommendations.push("🌬️ Gentle breeze — prfect for biking and flying kites.");
